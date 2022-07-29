@@ -403,17 +403,17 @@ POST: api/restify/users/{id}/detach/posts
 { "posts": [1, 2, 3] }
 ```
 
- Restify will guess the policy's name by the related entity. For this reason, it will be `detachPost`:
+Restify will guess the policy's name by the related entity. For this reason, it will be `detachPost`:
 
 ```php
 /**
- * Determine if the post could be attached to the user.
+ * Determine if the post could be detached from the user.
  *
  * @param User $user
  * @param Post $model
  * @return mixed
  */
-public function attachPost(User $user, Post $model)
+public function detachPost(User $user, Post $model)
 {
     return $user->is($model->creator()->first());
 }

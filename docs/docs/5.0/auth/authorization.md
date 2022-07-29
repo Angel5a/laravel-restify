@@ -449,13 +449,13 @@ In this case, Restify will guess the policy name, by the related entity, in this
 
 ```php
     /**
-     * Determine if the post could be attached to the user.
+     * Determine if the post could be detached from the user.
      *
      * @param User $user
      * @param Post $model
      * @return mixed
      */
-    public function attachPost(User $user, Post $model)
+    public function detachPost(User $user, Post $model)
     {
         return $user->is($model->creator()->first());
     }
