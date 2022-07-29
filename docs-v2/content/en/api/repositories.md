@@ -18,7 +18,7 @@ php artisan restify:repository PostRepository
 
 The newly created repository will be placed in the `app/Restify/PostRepository.php` file.
 
-By default, the generation repository command doesn't require any option. However, you can specify `--app` option to
+By default, the generation repository command doesn't require any option. However, you can specify `--all` option to
 instruct Restify to generate the migrations, policy, and model (in `app/Models`).
 
 ## Defining Repositories
