@@ -302,7 +302,7 @@ The response will be the updated user:
 {
     "data": {
         "id": 7,
-        "name": "Eduard",
+        "name": "Eduard Lupacescu",
         "email": "interstelar@me.com",
         "email_verified_at": null,
         "created_at": "2020-12-24T08:49:30.000000Z",
